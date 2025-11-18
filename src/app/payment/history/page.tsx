@@ -93,12 +93,20 @@ export default function PaymentHistoryPage() {
         <div className="bg-white rounded-lg shadow-md p-8">
           <div className="flex justify-between items-center mb-6">
             <h1 className="text-2xl font-bold text-gray-900">支払い履歴</h1>
-            <Link
-              href="/payment"
-              className="bg-blue-600 text-white py-2 px-4 rounded-lg font-medium hover:bg-blue-700 transition-colors"
-            >
-              新しい支払い
-            </Link>
+            <div className="flex space-x-3">
+              <Link
+                href="/"
+                className="bg-gray-200 text-gray-800 py-2 px-4 rounded-lg font-medium hover:bg-gray-300 transition-colors"
+              >
+                ホーム
+              </Link>
+              <Link
+                href="/payment"
+                className="bg-blue-600 text-white py-2 px-4 rounded-lg font-medium hover:bg-blue-700 transition-colors"
+              >
+                新しい支払い
+              </Link>
+            </div>
           </div>
 
           {error && (
@@ -150,6 +158,15 @@ export default function PaymentHistoryPage() {
               ))}
             </div>
           )}
+        </div>
+
+        <div className="mt-6 text-center">
+          <Link
+            href="/"
+            className="text-blue-600 hover:text-blue-800 text-sm font-medium"
+          >
+            ← トップページに戻る
+          </Link>
         </div>
       </div>
     </div>
