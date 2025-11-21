@@ -139,6 +139,12 @@ export default function HomePage() {
               >
                 支払い履歴
               </Link>
+              <Link
+                href="/admin/users"
+                className="inline-block bg-purple-600 text-white py-3 px-8 rounded-lg font-medium hover:bg-purple-700 transition-colors"
+              >
+                ユーザー管理
+              </Link>
             </div>
           ) : (
             <div className="space-x-4">
